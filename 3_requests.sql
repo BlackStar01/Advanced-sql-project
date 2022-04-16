@@ -51,7 +51,12 @@ LIMIT 10
 /* 7. Donner les évènements communs à plusieurs clubs, avec la liste de leurs
 responsables, et leurs affectations.*/
 
-
+SELECT * FROM evenement
+JOIN organiser ON organier.
 
 /* 8. Afficher la liste des récompenses allouées à chaque club, ainsi que leurs
 provenances. */
+
+SELECT decerner.id_club, nom_club, decerner.id_recompense, provenance FROM decerner
+JOIN recompense ON decerner.id_recompense = recompense.id_recompense
+JOIN `Club` ON decerner.id_club = Club.id_club
