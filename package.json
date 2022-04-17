@@ -1,0 +1,32 @@
+{
+  "name": "projet_bdd",
+  "version": "1.0.0",
+  "description": "App for the project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackStar01/projet_bdd.git"
+  },
+  "keywords": [
+    "sql",
+    "nodejs",
+    "efrei",
+    "databse"
+  ],
+  "author": "Vital (vitalwarren@yahoo.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlackStar01/projet_bdd/issues"
+  },
+  "homepage": "https://github.com/BlackStar01/projet_bdd#readme",
+  "dependencies": {
+    "chance": "^1.1.8",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "shuffle-array": "^1.0.1"
+  }
+}
