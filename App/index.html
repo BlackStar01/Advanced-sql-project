@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <metbutton http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> PROJET BASE DE DONNÉES </h1>
+
+    <div id="div">
+        <div>
+            <br><br>
+            <h2> Les requetes </h2>
+            <hr>
+            <div class="buttons">
+                <button onclick="request_1()">1. Afficher la liste de tous les clubs de Efrei en précisant leur type,
+                    président et
+                    description. </button>
+                <button onclick="request_2()">2. Afficher la liste des évènements qui ont eu lieu l’année passée, avec
+                    leur comité
+                    d’organisation, budget alloué et dépenses</button>
+                <button onclick="request_3()">3. Afficher l’état des rapports d’activité de chaque club.</button>
+                <button onclick="request_4()">4. Pour les rapports en cours de signature, afficher la liste des membres
+                    qui n’ont pas
+                    encore signé.</button>
+                <button onclick="request_5()">5. Afficher les étudiants qui participent à plus d’un seul club, en
+                    indiquant le nom du
+                    club et leur position au sein de celui-ci </button>
+                <button onclick="request_6()">6. Afficher la liste des dix tâches les plus coûteuses, avec leurs prix,
+                    et responsable.</button>
+                <button onclick="request_7()">7. Donner les évènements communs à plusieurs clubs, avec la liste de leurs
+                    responsables, et leurs affectations</button>
+                <button onclick="request_8()">8. Afficher la liste des récompenses allouées à chaque club, ainsi que
+                    leurs
+                    provenances.</button>
+            </div>
+
+        </div>
+
+        <div id="main">
+
+        </div>
+    </div>
+    <script src="./tools.js"></script>
+
+    <script>
+
+        function request_1() {
+            axios.get('http://localhost:3000/req_1')
+                .then(function (response) {
+                    createTable(response.data)
+                    console.log(response.data)
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+        function request_2() {
+            axios.get('http://localhost:3000/req_2')
+                .then(function (response) {
+                    createTable(response.data)
+                    console.log(response.data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+        function request_3() {
+            axios.get('http://localhost:3000/req_3')
+                .then(function (response) {
+                    createTable(response.data)
+                    console.log(response.data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+        function request_4() {
+            axios.get('http://localhost:3000/req_4')
+                .then(function (response) {
+                    createTable(response.data)
+                    console.log(response.data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+        function request_5() {
+            axios.get('http://localhost:3000/req_5')
+                .then(function (response) {
+                    createTable(response.data)
+                    console.log(response.data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+        function request_6() {
+            axios.get('http://localhost:3000/req_6')
+                .then(function (response) {
+                    createTable(response.data)
+                    console.log(response.data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+        function request_7() {
+            axios.get('http://localhost:3000/req_7')
+                .then(function (response) {
+                    createTable(response.data)
+                    console.log(response.data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+        function request_8() {
+            axios.get('http://localhost:3000/req_8')
+                .then(function (response) {
+                    createTable(response.data)
+                    console.log(response.data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+
+
+    </script>
+
+</body>
+
+</html>

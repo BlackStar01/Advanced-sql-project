@@ -51,8 +51,8 @@ LIMIT 10
 /* 7. Donner les évènements communs à plusieurs clubs, avec la liste de leurs
 responsables, et leurs affectations.*/
 
-SELECT * FROM evenement
-JOIN organiser ON organier.
+SELECT * FROM (SELECT id_evenement, COUNT(id_club) as nbrOrganisateurs FROM organiser
+GROUP BY id_evenement) as allEvents WHERE nbrOrganisateurs>1
 
 /* 8. Afficher la liste des récompenses allouées à chaque club, ainsi que leurs
 provenances. */

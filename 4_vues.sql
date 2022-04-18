@@ -23,7 +23,7 @@ FROM
       marge DESC
   ) as res
 WHERE
-  marge > 0
+  marge > 0;
 
 /* 2. Créer une vue appelée « top_présidents » qui les présidents de clubs qui rédigent le
 rapport d’activité dans les délais les plus courts. */

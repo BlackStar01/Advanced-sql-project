@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    padding: 50px 0px;
+    background-color: orangered;
+}
+h2 {
+    padding: 0px 30px;
+}
+#div
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#main {
+    padding: 70px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+th, tr, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+tr:nth-child(1)
+{
+    background-color: orangered;
+}
+
+button
+{
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.3em;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px #ccc;
+}
